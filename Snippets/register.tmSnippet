@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Application::register('${1:name}', function(\$${2:app}){
+    ${3:\$$2-&gt;get('/', function(){
+        echo 'Hello World';
+    \});}
+});
+
+</string>
+	<key>name</key>
+	<string>register</string>
+	<key>scope</key>
+	<string>source.php.breeze</string>
+	<key>tabTrigger</key>
+	<string>register</string>
+	<key>uuid</key>
+	<string>6268C6E8-4C06-416C-B838-41AAC3DBD24D</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\$breeze-&gt;config(${1:'${2:name}'${3:, '${4:value}'}});</string>
+	<key>name</key>
+	<string>$breeze-&gt;config</string>
+	<key>scope</key>
+	<string>source.php.breeze</string>
+	<key>tabTrigger</key>
+	<string>bconfig</string>
+	<key>uuid</key>
+	<string>9707ECE3-1DB5-4FB6-B6F4-B203C97BE5E8</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\$breeze-&gt;any(${1:array($2), }'/${3:route}', function(\$${4:breeze}) {
+	${5:\$$4-&gt;display('${6:$3}');}
+});
+
+</string>
+	<key>name</key>
+	<string>$breeze-&gt;any</string>
+	<key>scope</key>
+	<string>source.php.breeze</string>
+	<key>tabTrigger</key>
+	<string>bany</string>
+	<key>uuid</key>
+	<string>FAEE487E-6AFF-4EA5-A672-2D295F41D812</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\$breeze-&gt;get('/${1:route}', function(\$${2:breeze}) {
+	${3:\$$2-&gt;display('${4:$1}');}
+});
+
+</string>
+	<key>name</key>
+	<string>$breeze-&gt;get</string>
+	<key>scope</key>
+	<string>source.php.breeze</string>
+	<key>tabTrigger</key>
+	<string>bget</string>
+	<key>uuid</key>
+	<string>DC2CABBB-3DC8-415F-8DDE-B7C68ADABA57</string>
+</dict>
+</plist>

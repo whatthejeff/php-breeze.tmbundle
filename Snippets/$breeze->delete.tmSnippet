@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\$breeze-&gt;delete('/${1:route}', function(\$${2:breeze}) {
+	${3:\$$2-&gt;display('${4:$1}');}
+});
+
+</string>
+	<key>name</key>
+	<string>$breeze-&gt;delete</string>
+	<key>scope</key>
+	<string>source.php.breeze</string>
+	<key>tabTrigger</key>
+	<string>bdelete</string>
+	<key>uuid</key>
+	<string>CF5575C4-EA73-490C-958B-BD42B06C78A8</string>
+</dict>
+</plist>

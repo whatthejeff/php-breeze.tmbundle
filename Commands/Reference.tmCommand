@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/bash
+
+. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+html_header "Breeze Reference"
+Markdown.pl "$TM_BUNDLE_SUPPORT/doc/reference.md"
+echo '&lt;script src="file://'"$TM_BUNDLE_SUPPORT"'/script/reference.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;'
+html_footer</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^h</string>
+	<key>name</key>
+	<string>Reference</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.php, source.php.breeze</string>
+	<key>uuid</key>
+	<string>C8A30AAB-09B1-4339-851F-E3659F703828</string>
+</dict>
+</plist>

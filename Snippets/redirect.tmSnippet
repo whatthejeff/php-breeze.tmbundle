@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>redirect('${1:http://${2:www.mysite.com/}}'${3:, ${4:302}});</string>
+	<key>name</key>
+	<string>redirect</string>
+	<key>scope</key>
+	<string>source.php.breeze</string>
+	<key>tabTrigger</key>
+	<string>redirect</string>
+	<key>uuid</key>
+	<string>39DBF861-D5D5-441D-AA96-7EC5C89E56D2</string>
+</dict>
+</plist>

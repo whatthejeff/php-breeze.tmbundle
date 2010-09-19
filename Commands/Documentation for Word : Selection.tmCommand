@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/bash
+
+word=$(echo "${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}" | sed 's/^[^a-zA-Z0-9_\x7F-\xFF]*\([a-zA-Z0-9_\x7F-\xFF]*\).*$/\1/')
+
+if [ -z "$word" ]
+then
+	exit_show_tool_tip "Nothing to lookup (hint: place the caret on a tag)"
+elif ! grep -Esq "^$word" "$TM_BUNDLE_SUPPORT/doc/reference.md"
+then
+	exit_show_tool_tip "'$word' is not a valid Breeze function"
+fi
+
+. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+html_header "Breeze Reference"
+cat &lt;&lt; EOHTML
+$(Markdown.pl "$TM_BUNDLE_SUPPORT/doc/reference.md" | sed -n '/^&lt;h2&gt;'"$word"'/,/^&lt;h2&gt;/p' | sed '$d')
+EOHTML
+html_footer
+exit_show_html</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^h</string>
+	<key>name</key>
+	<string>Documentation for Word / Selection</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.php, source.php.breeze</string>
+	<key>uuid</key>
+	<string>FC0BA4A1-61A8-446E-9F05-5E2FC7DF24D1</string>
+</dict>
+</plist>
