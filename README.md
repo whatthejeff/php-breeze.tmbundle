@@ -17,7 +17,7 @@ The easiest way to install this bundle is via command line.
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
     cd ~/Library/Application\ Support/TextMate/Bundles
-    git clone git@github.com:whatthejeff/php-breeze.tmbundle.git 'PHP Breeze.tmbundle'
+    git clone git://github.com/whatthejeff/php-breeze.tmbundle.git 'PHP Breeze.tmbundle'
     osascript -e 'tell app "TextMate" to reload bundles'
 
 ### Install without Git:
