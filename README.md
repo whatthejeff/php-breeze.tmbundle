@@ -11,7 +11,7 @@ This bundle is subject to the new BSD license.  For full copyright and license i
 Install
 -------
 
-The easies way to install this bundle is via command line.
+The easiest way to install this bundle is via command line.
 
 ### Install with Git
 
