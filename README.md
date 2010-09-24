@@ -24,8 +24,8 @@ The easiest way to install this bundle is via command line.
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
     cd ~/Library/Application\ Support/TextMate/Bundles
-    wget http://github.com/whatthejeff/php-breeze.tmbundle/tarball/master
-    tar zxf php-breeze.tmbundle*.tar.gz
-    rm php-breeze.tmbundle*.tar.gz
-    mv php-breeze.tmbundle* 'PHP Breeze.tmbundle'
+    curl -L http://github.com/whatthejeff/php-breeze.tmbundle/tarball/master -o php-breeze.tmbundle.tar.gz
+    tar zxf php-breeze.tmbundle.tar.gz
+    rm php-breeze.tmbundle.tar.gz
+    mv whatthejeff-php-breeze.tmbundle* 'PHP Breeze.tmbundle'
     osascript -e 'tell app "TextMate" to reload bundles'
