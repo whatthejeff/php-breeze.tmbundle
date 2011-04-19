@@ -15,17 +15,21 @@ The easiest way to install this bundle is via command line.
 
 ### Install with Git
 
-    mkdir -p ~/Library/Application\ Support/TextMate/Bundles
-    cd ~/Library/Application\ Support/TextMate/Bundles
-    git clone git://github.com/whatthejeff/php-breeze.tmbundle.git 'PHP Breeze.tmbundle'
-    osascript -e 'tell app "TextMate" to reload bundles'
+``` sh
+mkdir -p ~/Library/Application\ Support/TextMate/Bundles
+cd ~/Library/Application\ Support/TextMate/Bundles
+git clone git://github.com/whatthejeff/php-breeze.tmbundle.git 'PHP Breeze.tmbundle'
+osascript -e 'tell app "TextMate" to reload bundles'
+```
 
 ### Install without Git:
 
-    mkdir -p ~/Library/Application\ Support/TextMate/Bundles
-    cd ~/Library/Application\ Support/TextMate/Bundles
-    curl -L http://github.com/whatthejeff/php-breeze.tmbundle/tarball/master -o php-breeze.tmbundle.tar.gz
-    tar zxf php-breeze.tmbundle.tar.gz
-    rm php-breeze.tmbundle.tar.gz
-    mv whatthejeff-php-breeze.tmbundle* 'PHP Breeze.tmbundle'
-    osascript -e 'tell app "TextMate" to reload bundles'
+``` sh
+mkdir -p ~/Library/Application\ Support/TextMate/Bundles
+cd ~/Library/Application\ Support/TextMate/Bundles
+curl -L http://github.com/whatthejeff/php-breeze.tmbundle/tarball/master -o php-breeze.tmbundle.tar.gz
+tar zxf php-breeze.tmbundle.tar.gz
+rm php-breeze.tmbundle.tar.gz
+mv whatthejeff-php-breeze.tmbundle* 'PHP Breeze.tmbundle'
+osascript -e 'tell app "TextMate" to reload bundles'
+```
